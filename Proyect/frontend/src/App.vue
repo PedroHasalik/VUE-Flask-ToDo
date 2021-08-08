@@ -34,7 +34,6 @@ export default {
     deleteTodo(id){
       axios.delete('http://localhost:5000/delete/'+id)
       .then(this.todos = this.todos.filter(todo => todo.id !== id))
-      .catch(err => console.log(err));
     },
     addTodo(newTodo){
       const {title,completed} = newTodo;
@@ -43,7 +42,6 @@ export default {
         completed
       })
         .then (res => this.todos = [...this.todos, newTodo])
-        .catch(err => console.log(err))
     },
     editTodo(todo){
       axios.put('http://localhost:5000/update/'+todo.id,{
@@ -64,7 +62,6 @@ export default {
   created() {
     axios.get('http://localhost:5000/get')
       .then(res => this.todos = res.data)
-      .catch(err => console.log(err));
   }
 }
 </script>
