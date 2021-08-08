@@ -3,6 +3,7 @@
 ## Requirements
 ```
 vue.js 2.6.14
+node.js 14.17.4
 axios 0.21.1
 mysql 14.14
 Python 3.8.11
