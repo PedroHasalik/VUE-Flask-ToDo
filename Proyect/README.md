@@ -16,3 +16,7 @@ marshmallow-sqlalchemy 0.26.1
 pymysql 1.0.2
 sqlalchemy 1.4.22 
 ```
+## Running the proyect
+```
+Once the packages are installed run 'python run.py' on the backend folder and run 'npm run serve' on the frontend folder
+```
