@@ -1,0 +1,15 @@
+#!/bin/bash
+
+export DBUSER='user'
+export DBPASSWORD='123456'
+cd backend
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.8
+pip install -r requirements.txt
+cd -
+cd frontend
+curl -sL https://deb.nodesource.com/setup_14.17.4 | sudo -E bash -
+npm install vue
+npm install axios
