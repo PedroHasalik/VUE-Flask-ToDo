@@ -13,5 +13,5 @@ db = SQLAlchemy(app)
 db.create_all()
 CORS(app)
 
-from todoBackend import routes
+from todoBackend import controllers
 
